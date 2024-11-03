@@ -77,9 +77,9 @@ const App = () => {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/download" element={<Download />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/download" element={<Download />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="*" element={<Home />} />
         </Routes>
       </div>
     </Router>

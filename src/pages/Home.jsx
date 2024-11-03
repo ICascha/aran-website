@@ -12,7 +12,7 @@ const authors = [
 
 const TeamSection = () => {
     const teamMembers = [
-        { name: "Hezha MohammedKhan", role: "Ph.D. Candidate", image: "/images/hezha.jpeg" },
+        { name: "Hezha MohammedKhan", role: "Ph.D. Candidate", image: "/aran-website/images/hezha.jpeg" },
         { name: "Jane Doe", role: "Example", image: "/api/placeholder/200/200" },
         { name: "Robert Johnson", role: "Example", image: "/api/placeholder/200/200" },
         { name: "Maria Garcia", role: "Example", image: "/api/placeholder/200/200" },
@@ -76,7 +76,7 @@ const ResourceSection = () => {
             </h3>
             <a href="#" className="block aspect-[4/5] overflow-hidden">
               <img 
-                src="/images/paper.jpeg" 
+                src="/aran-website/images/paper.jpeg" 
                 alt="ARAN Paper" 
                 className="w-full h-full object-cover hover:opacity-80 transition-opacity duration-200"
               />
@@ -90,7 +90,7 @@ const ResourceSection = () => {
             </h3>
             <a href="#" className="block aspect-[4/5] overflow-hidden">
               <img 
-                src="/images/poster.jpeg" 
+                src="/aran-website/images/poster.jpeg" 
                 alt="ARAN Poster" 
                 className="w-full h-full object-cover hover:opacity-80 transition-opacity duration-200"
               />
@@ -143,7 +143,7 @@ export const Home = () => {
 
       <div className="mb-12">
         <img 
-          src="/images/main_image.webp"
+          src="/aran-website/images/main_image.webp"
           alt="ARAN Dataset Example"
           className="w-full rounded-lg shadow-lg"
         />
