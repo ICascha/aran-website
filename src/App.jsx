@@ -9,8 +9,11 @@ import { Leaderboard } from './pages/Leaderboard';
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // Get the base URL from Vite's environment
+    const baseUrl = import.meta.env.BASE_URL;
+
   return (
-    <Router>
+    <Router basename={baseUrl}>
       <div className="min-h-screen bg-gray-50">
         <nav className="bg-white shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
