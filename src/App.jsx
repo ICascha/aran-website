@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';  // Changed to HashRouter
 import { Menu, X } from 'lucide-react';
 import { Home } from './pages/Home';
 import { Download } from './pages/Download';
@@ -8,12 +8,8 @@ import { Leaderboard } from './pages/Leaderboard';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    // Get the base URL from Vite's environment
-    const baseUrl = import.meta.env.BASE_URL;
-
   return (
-    <Router basename={baseUrl}>
+    <Router>
       <div className="min-h-screen bg-gray-50">
         <nav className="bg-white shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,9 +73,9 @@ const App = () => {
         </nav>
 
         <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/download" element={<Download />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="*" element={<Home />} />
         </Routes>
       </div>
     </Router>
