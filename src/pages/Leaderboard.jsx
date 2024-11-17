@@ -3,23 +3,23 @@ import React, { useState } from 'react';
 const initialData = [
   {
     rank: 1,
-    method: "FastAI-AnthroNet",
-    authors: "Smith et al.",
-    heightMAE: 2.1,
-    weightMAE: 3.4,
-    waistMAE: 2.8,
-    headMAE: 1.2
+    method: "Densenet121",
+    authors: "Mohammedkhan et al.",
+    heightMAE: 2.54,
+    weightMAE: 1.51,
+    waistMAE: 2.53,
+    headMAE: 1.52
   },
   {
     rank: 2,
-    method: "AnthroFormer-V2",
-    authors: "Johnson et al.",
-    heightMAE: 2.3,
-    weightMAE: 3.1,
-    waistMAE: 2.9,
-    headMAE: 1.4
+    method: "Linear baseline",
+    authors: "Mohammedkhan et al.", 
+    heightMAE: 4.89,
+    weightMAE: 2.20,
+    waistMAE: 3.00,
+    headMAE: 1.66
   }
-];
+ ];
 
 export const Leaderboard = () => {
   const [data, setData] = useState(initialData);

@@ -1,4 +1,3 @@
-// src/pages/Download.jsx
 import React from 'react';
 
 export const Download = () => {
@@ -17,14 +16,28 @@ export const Download = () => {
         </ul>
       </div>
 
-      <div className="text-center">
+      <div className="flex flex-col space-y-4 items-center">
         <a
           href="#"
-          className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          className="w-full max-w-md bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
         >
-          Download Dataset (10GB)
+          Original dataset (3.6GB)
+        </a>
+        <a
+          href="#"
+          className="w-full max-w-md bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
+        >
+          Embeddings (?GB)
+        </a>
+        <a
+          href="#"
+          className="w-full max-w-md bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
+        >
+          Dataset with additional poses (?GB)
         </a>
       </div>
     </div>
   );
 };
+
+export default Download;

@@ -18,7 +18,7 @@ const TeamSection = () => {
         { name: "Cascha van Wanrooij", role: "MSc", image: "/aran-website/images/cascha.jpeg", href: "https://www.linkedin.com/in/caschavanwanrooij/" },
         { name: "Eric Postma", role: "Professor", image: "/aran-website/images/eric.jpeg", href: "https://www.tilburguniversity.edu/nl/medewerkers/e-o-postma" },
         { name: "Çiçek Güven", role: "Ph.D.", image: "/aran-website/images/cicek.jpeg", href: "https://www.tilburguniversity.edu/nl/medewerkers/c-guven" },
-        { name: "Marleen Balvert", role: "Ph.D.", image: "/aran-website/images/marleen.jpeg", href: "https://www.tilburguniversity.edu/nl/medewerkers/m-balvert" },
+        { name: "Marleen Balvert", role: "Associate Professor", image: "/aran-website/images/marleen.jpeg", href: "https://www.tilburguniversity.edu/nl/medewerkers/m-balvert" },
         { name: "Heersh Hmh Raof Saeed", role: "Medical Doctor, Ph.D.", image: "/aran-website/images/heersh.jpeg", href: "https://www.researchgate.net/profile/Heersh-Saeed" },
         { name: "Chenar Omer Ali", role: "Medical Doctor, Ph.D.", image: "/aran-website/images/chenar.jpeg", href: "https://www.instagram.com/dr.chenar.pediatrics/" },
 
@@ -71,8 +71,8 @@ const TeamSection = () => {
 
 const ResourceSection = () => {
     return (
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-4xl font-normal text-gray-600 mb-8">Resource:</h2>
+        <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Resource</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Paper */}
           <div className="flex flex-col">
@@ -81,7 +81,7 @@ const ResourceSection = () => {
             </h3>
             <a href="#" className="block aspect-[4/5] overflow-hidden">
               <img 
-                src="/aran-website/images/paper.jpeg" 
+                src="/aran-website/images/paper_page.jpeg" 
                 alt="ARAN Paper" 
                 className="w-full h-full object-cover hover:opacity-80 transition-opacity duration-200"
               />
@@ -95,7 +95,7 @@ const ResourceSection = () => {
             </h3>
             <a href="#" className="block aspect-[4/5] overflow-hidden">
               <img 
-                src="/aran-website/images/poster.jpeg" 
+                src="/aran-website/images/paper_page.jpeg" 
                 alt="ARAN Poster" 
                 className="w-full h-full object-cover hover:opacity-80 transition-opacity duration-200"
               />
@@ -110,12 +110,18 @@ const ResourceSection = () => {
               </a>
             </h3>
             <div className="aspect-[4/5] relative">
-              <iframe
+              {/* <iframe
                 src="https://www.youtube.com/embed/HMNDoFDRigU"
                 title="ARAN Presentation"
                 className="absolute inset-0 w-full h-full"
                 allowFullScreen
-              />
+              /> */}
+              <div className="absolute inset-0 w-full h-full flex items-center justify-center bg-gray-100">
+              <div className="text-center">
+                <p className="text-xl text-gray-600">Content will arrive soon</p>
+                <p className="text-sm text-gray-400">Video placeholder</p>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -176,14 +182,6 @@ Goals.
 
       <TeamSection />
 
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-4">Video</h2>
-        <iframe
-          className="w-full aspect-video rounded-lg shadow-lg"
-          src="https://www.youtube.com/embed/56NNY32C2Kg"
-          allowFullScreen
-        />
-      </section>
 
       <ResourceSection />
 
@@ -205,7 +203,7 @@ Goals.
         <p className="text-gray-600">
           For questions about the dataset, please contact us at:{" "}
           <a href="mailto:contact@aran-dataset.org" className="text-blue-600 hover:text-blue-800">
-            contact@aran-dataset.org
+          h.h.mohammedkhan@tilburguniversity.edu
           </a>
         </p>
       </section>
